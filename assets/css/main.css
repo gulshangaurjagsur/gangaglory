@@ -1476,22 +1476,30 @@ input[type="submit"] {
 }
 
 .homepage-bg-1 {
-  background-image: url(../img/hero-bg.jpg);
-}
-
-.homepage-bg-2 {
-  background-image: url(../img/hero-bg-2.jpg);
-}
-
-.homepage-bg-3 {
   background-image: url(../img/box.png);
   background-repeat: no-repeat;
   background-size: inherit;
   background-position: right 80px;
   background-color: #0A2445;
 }
+
+.homepage-bg-2 {
+  background-image: url(../img/box1.png);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: right 80px;
+  background-color: #0A2445;
+}
+
+.homepage-bg-3 {
+  background-image: url(../img/box2.png);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: right 80px;
+  background-color: #0A2445;
+}
 @media (max-width: 567px) {
-    .homepage-bg-3{
+    .homepage-bg-1, .homepage-bg-2, .homepage-bg-3{
           background-size: contain;
     background-position: center 40%;
     background-color: #0A2445;
