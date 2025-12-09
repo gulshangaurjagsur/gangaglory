@@ -2866,6 +2866,9 @@ table.order-details tbody td {
   .pt-md-3 {
     padding-top: 3rem;
   }
+  .homepage-slider .owl-dots{
+    display: none !important;
+  }
 }
 .owl-controls{
   height: auto !important;
