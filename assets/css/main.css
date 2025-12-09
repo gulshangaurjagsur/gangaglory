@@ -1676,6 +1676,7 @@ p.blog-meta span i {
 p.excerpt {
   line-height: 1.8;
   color: #555;
+  font-size: 15px;
 }
 
 .latest-news a.boxed-btn {
