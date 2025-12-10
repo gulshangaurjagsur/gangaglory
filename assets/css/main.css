@@ -2793,7 +2793,7 @@ table.order-details tbody td {
 }
 
 .mean-container .mean-bar {
-    z-index: 99999 !important;
+    /* z-index: 99999 !important; */
 }
 
 .mean-container a.meanmenu-reveal {

@@ -225,9 +225,6 @@
 	.hero-text p.subtitle {
 	    font-size: 13px;
 	}
-	.section-title p {
-	    max-width: 400px;
-	}
 
 	.section-title h3 {
 	    font-size: 25px;
@@ -393,9 +390,7 @@
 	.hero-area div.hero-form {
 		width: auto;
 	}
-	.section-title p {
-		max-width: 285px;
-	}
+	
 
 	p.testimonial-body {
 		max-width: 285px;
