@@ -2945,7 +2945,7 @@ nav.main-menu ul, nav.main-menu ul li .header-icons{
   .sec-cta.overlay {
     position: relative; }
     .sec-cta.overlay:before {
-      background: #c8ad8f;
+      background: #f4e8e8;
       opacity: .9;
       overflow: hidden;
       content: "";
