@@ -58,39 +58,59 @@
 				</div>
 				<div class="col-lg-8 mb-5 mb-lg-0">
 					<div class="form-title">
-						<h2>Have you any question?</h2>
-						<p>Ganga Glory के शादी के बॉक्स, गिफ्ट पैकेजिंग या कस्टम डिज़ाइन से जुड़ी किसी भी जानकारी के लिए हमें बेझिझक संपर्क करें। हमारी टीम आपको सही मार्गदर्शन देने के लिए हमेशा तैयार है।</p>
+						<h2>ऑर्डर करें या हमसे जुड़ें</h2>
+						<p>गंगा ग्लोरी दिल्ली और NCR में शादी-ब्याह और बड़े आयोजनों के लिए प्रीमियम भाजी, नमकीन और मिठाई
+							की सप्लाई करता है। हम शादियों और इवेंट्स के लिए bulk orders लेते हैं। होम डिलीवरी भी उपलब्ध
+							है।</p>
 					</div>
 					<div id="form_status"></div>
 					<div class="contact-form">
 						<form action="https://formsubmit.co/seve@gangaglory.com" method="POST">
 
-							<p>
-								<input type="text" placeholder="Name" name="name" id="name" required minlength="2">
+							<div class="row">
+								<div class="col-md-4">
+									<input type="text" name="name" class="form-control" placeholder="Full Name" required
+										minlength="2">
+								</div>
 
-								<input type="email" placeholder="Email" name="email" id="email" required>
-							</p>
+								<div class="col-md-4">
+									<input type="tel" name="mobile" class="form-control" placeholder="Mobile Number"
+										required pattern="[0-9]{10}"
+										title="Please enter a valid 10-digit mobile number">
+								</div>
 
-							<p>
-								<input type="tel" placeholder="Phone (10 digits)" name="phone" id="phone" required
-									pattern="[0-9]{10}" title="Please enter a valid 10-digit phone number">
+								<div class="col-md-4">
+									<select name="order_type" class="form-control order-type" required>
+										<option value="" disabled selected>Order Type</option>
+										<option value="Wedding">Wedding</option>
+										<option value="Bulk">Bulk</option>
+										<option value="Corporate">Corporate</option>
+										<option value="Home Delivery">Home Delivery</option>
+									</select>
+								</div>
+							</div>
 
-								<input type="text" placeholder="Subject" name="subject" id="subject" required>
-							</p>
-
-							<p>
-								<textarea name="message" id="message" cols="30" rows="10" placeholder="Message" required
-									minlength="5"></textarea>
-							</p>
+							<div class="row mt-3">
+								<div class="col-md-12">
+									<textarea name="message" class="form-control" rows="5"
+										placeholder="Message / Requirements" required minlength="5"></textarea>
+								</div>
+							</div>
 
 							<!-- Formsubmit Hidden Fields -->
-							<input type="hidden" name="token" value="FsWga4&@f6aw" />
 							<input type="hidden" name="_captcha" value="false">
 							<input type="hidden" name="_template" value="table">
 
-							<p><input type="submit" value="Submit"></p>
+							<div class="row mt-3">
+								<div class="col-md-12 text-center">
+									<input type="submit" value="Submit" class="btn btn-primary">&nbsp;&nbsp;
+									<a href="https://wa.me/918100000858" target="_blank" class="bordered-btn">Order on WhatsApp</a>
+								</div>
+							</div>
 
 						</form>
+
+
 
 					</div>
 				</div>

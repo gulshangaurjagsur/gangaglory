@@ -505,7 +505,11 @@ a.boxed-btn, a.bordered-btn, a.cart-btn {
   content: "";
   background-color: #f4e8e8;
   z-index: -1;
-  /* opacity: 0.8; */
+  background-image: url(../img/banner/bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  opacity: 0.2;
 }
 
 /* -----------------------------------------------------------------------------
@@ -1242,7 +1246,7 @@ div.owl-controls div.owl-nav div:hover {
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
-  height: 120px;
+  height: 170px;
 }
 
 .product-image img:hover {
@@ -1483,27 +1487,24 @@ input[type="submit"] {
 }
 
 .homepage-bg-1 {
-  background-image: url(../img/box.png);
+  background-image: url(../img/banner/1.png);
   background-repeat: no-repeat;
-  background-size: inherit;
+  background-size: 50%;
   background-position: right 10px;
-  background-color: #f4e8e8;
 }
 
 .homepage-bg-2 {
-  background-image: url(../img/box1.png);
+  background-image: url(../img/banner/2.png);
   background-repeat: no-repeat;
   background-size: 50%;
   background-position: right 30px;
-  background-color: #f4e8e8;
 }
 
 .homepage-bg-3 {
-  background-image: url(../img/box2.png);
+  background-image: url(../img/banner/3.png);
   background-repeat: no-repeat;
-  background-size: 50%;
+  background-size: 45%;
   background-position: right 30px;
-  background-color: #f4e8e8;
 }
 @media (max-width: 567px) {
     .homepage-bg-1, .homepage-bg-2, .homepage-bg-3{
@@ -2907,7 +2908,7 @@ table.order-details tbody td {
   position: fixed;
   padding: 5px 0 0 0;
   background: #061b32;
-  top: 0;
+  top: 25px;
   height: 80px;
 }
 @media (min-width: 768px) {
@@ -2916,8 +2917,8 @@ nav.main-menu ul, nav.main-menu ul li .header-icons{
   padding-top: 5px;
 }
 .homepage-slider{
-  margin-top: 70px;
-  height: calc(100vh - 70px);
+  margin-top: 105px;
+  height: calc(100vh - 105px);
 }
 /* .homepage-slider div{
   height: 90%;
@@ -2958,4 +2959,66 @@ nav.main-menu ul, nav.main-menu ul li .header-icons{
   padding: 10px 20px;
   border-radius: 50px;
   border: transparent;
+}
+
+.homepage-slider{
+  position: relative;
+  background-image: url(../img/banner/bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.homepage-slider::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(244, 232, 232, 0.9);
+  z-index: 1;
+}
+
+/* content upar rahe */
+.homepage-slider > *{
+  position: relative;
+  z-index: 2;
+}
+
+.marquee {
+  width: 100%;
+  background: #f4e8e8;
+  white-space: nowrap;
+  z-index: 99;
+  position: fixed;
+  top: 0;
+}
+
+.marquee span {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marqueeRun 20s linear infinite;
+}
+
+@keyframes marqueeRun {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+.owl-controls{
+  position: absolute;
+}
+@media (min-width: 768px) {
+  .rowReverse{
+  flex-direction: row;
+}
+}
+.rowReverse{
+  flex-direction: row-reverse;
+}
+.readMoreTxt{
+  font-family: 'Poppins', sans-serif;
+  display: inline-block;
+  color: #F28123;
+  border-radius: 10px;
+}
+.product-lists i{
+  vertical-align: middle;
 }

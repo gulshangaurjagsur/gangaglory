@@ -104,14 +104,26 @@ function initHeaderScripts() {
     /*********************
      * ISOTOPE
      *********************/
-    $(".product-filters li").on('click', function () {
-      $(".product-filters li").removeClass("active");
-      $(this).addClass("active");
-      var selector = $(this).attr('data-filter');
-      $(".product-lists").isotope({ filter: selector });
-    });
+    $(window).on('load', function () {
 
-    $(".product-lists").isotope();
+  // init isotope with default active filter
+  var $grid = $('.product-lists').isotope({
+    itemSelector: '.col-lg-4',
+    layoutMode: 'fitRows',
+    filter: $('.product-filters li.active').attr('data-filter')
+  });
+
+  // filter on click
+  $('.product-filters li').on('click', function () {
+    $('.product-filters li').removeClass('active');
+    $(this).addClass('active');
+
+    var selector = $(this).attr('data-filter');
+    $grid.isotope({ filter: selector });
+  });
+
+});
+
 
 
     /*********************
