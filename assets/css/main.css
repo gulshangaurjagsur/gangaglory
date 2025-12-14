@@ -3022,3 +3022,12 @@ nav.main-menu ul, nav.main-menu ul li .header-icons{
 .product-lists i{
   vertical-align: middle;
 }
+.mainItems{
+  font-family: 'Poppins', sans-serif;
+  color: #F28123;
+  font-size: 18px;
+  font-weight: bold;
+}
+.mainItems span{
+  color: #051922;
+}

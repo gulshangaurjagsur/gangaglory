@@ -108,7 +108,7 @@ function initHeaderScripts() {
 
   // init isotope with default active filter
   var $grid = $('.product-lists').isotope({
-    itemSelector: '.col-lg-4',
+    itemSelector: '.col-lg-4, .mainItems',
     layoutMode: 'fitRows',
     filter: $('.product-filters li.active').attr('data-filter')
   });
