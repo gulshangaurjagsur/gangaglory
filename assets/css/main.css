@@ -1492,6 +1492,12 @@ input[type="submit"] {
   background-size: 50%;
   background-position: right 10px;
 }
+.homepage-bg-new {
+  background-image: url(../img/banner/2026.jpeg);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: right 50px;
+}
 
 .homepage-bg-2 {
   background-image: url(../img/banner/2.png);
@@ -1512,8 +1518,15 @@ input[type="submit"] {
     background-position: center 40%;
     /* background-color: #0A2445; */
     }
+    .homepage-bg-new{
+      background-size: contain;
+    background-position: center 30%;
+    }
     .hero-area div.hero-text{
       margin-top: 60%;
+    }
+    .hero-area.homepage-bg-new div.hero-text{
+      margin-top: 50%;
     }
     
 }
